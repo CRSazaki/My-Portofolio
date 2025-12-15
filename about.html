@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Orbitron Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* Glow Text Animation */
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00eaff; }
+      to { text-shadow: 0 0 25px #00eaff; }
+    }
+    @keyframes glowmove {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+  </style>
+</head>
+
+<body class="min-h-screen p-10 text-white" style="background:#0a0f24; font-family:'Orbitron',sans-serif;">
+
+  <!-- HEADER -->
+<header class="mb-12 flex items-center justify-between animate-[glow_3s_ease-in-out_infinite_alternate] bg-[#0d1b2a]/60 backdrop-blur-md border-b border-[#00eaff]/30 p-4 rounded-xl"">
+  
+  <!-- Title -->
+  <h1 class="text-4xl font-extrabold text-[#00eaff]">
+    My Portfolio
+  </h1>
+
+  <!-- Nav -->
+  <nav class="flex flex-col sm:flex-row gap-4 sm:gap-6 text-lg">
+  <a href="index.html" class="hover:text-[#00eaff] transition">Home</a>
+  <a href="about.html" class="hover:text-[#00eaff] transition">About</a>
+  <a href="projects.html" class="hover:text-[#00eaff] transition">Projects</a>
+  <a href="contact.html" class="hover:text-[#00eaff] transition">Contact</a>
+</nav>
+
+</header>
+
+  <!-- PROFILE -->
+<div class="flex items-center gap-6">
+
+  <!-- Foto -->
+  <img src="img/foto.jpeg" class="w-40 h-50 rounded-full border-2 border-[#9ec5c9] shadow-[0_0_20px_#00eaff]" alt="profile">
+
+  <!-- Informasi -->
+  <div class="flex flex-col justify-center">
+    <p class="text-xl underline text-[#00eaff]">Back-end Developer</p>
+    <h2 class="text-5xl font-bold mt-1">Carissa Rara Sahasika</h2>
+  </div>
+</div>
+
+
+  <section class="mt-8 font-serif text-base">
+    <p>Saya, Carissa Rara Sahasika, lahir pada 15 Juli 2008.
+      Saya memiliki minat besar dalam pemrograman dan kini sedang mengembangkan diri sebagai Back-End Developer.
+      Dengan kemampuan yang baik dan komitmen untuk terus belajar,
+      saya selalu berusaha memberikan hasil terbaik dalam setiap proyek.
+      <br>
+      Tujuan saya adalah mampu membangun sistem yang stabil, aman, dan scalable. Serta saya ingin berkembang agar bisa menjadi Full-stack Developer
+    </p>
+  </section>
+
+  <div class="p-6 bg-[#11173d] rounded-xl shadow-[0_0_15px_#0088ff] mt-8 cursor-pointer transition transform hover:scale-105 hover:bg-[#0088ff] hover:shadow-[0_0_30px_#00eaff">
+
+    <h3 class="text-xl font-bold mb-4 text-[#00eaff]">Skill (Saat Ini & Sedang Dipelajari)</h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+    <!-- SKILL DASAR (kiri) -->
+    <div>
+      <p class="text-gray-300 font-semibold mb-1">Skill Dasar:</p>
+      <ul class="list-disc list-inside text-gray-300 text-sm">
+        <li>HTML</li>
+        <li>CSS (Tailwind CSS)</li>
+        <li>MySQL / Database Dasar</li>
+        <li>UI / UX</li>
+      </ul>
+    </div>
+
+    <!-- SEDANG DIPERLAJARI (kanan) -->
+    <div>
+      <p class="text-gray-300 font-semibold mb-1">Sedang Dipelajari:</p>
+      <ul class="list-disc list-inside text-gray-300 text-sm">
+        <li>Framework Laravel</li>
+        <li>JavaScript</li>
+        <li>MySQL / Database Dasar</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Tools -->
+    <div class="p-6 bg-[#11173d] rounded-xl mt-8 shadow-[0_0_15px_#ff00ea] cursor-pointer transition transform hover:scale-105 hover:bg-[#d000ff] hover:shadow-[0_0_30px_#ff4dff]">
+      <h3 class="text-xl font-bold mb-2">Tools & Software</h3>
+      <li class="text-gray-300 text-sm">VScode</li>
+      <li class="text-gray-300 text-sm">Laragon</li>
+      <li class="text-gray-300 text-sm">PhpMyAdmin</li>
+    </div>
+
+<div class="mt-10 flex justify-center md:mt-16">
+    <a href="projects.html"
+      class="relative inline-flex items-center gap-2 px-5 py-3 sm:px-6 sm:py-3 md:px-8 md:py-4 text-sm sm:text-base md:text-lg font-bold bg-[#11173d] rounded-xl
+           shadow-[0_0_12px_#0088ff] md:shadow-[0_0_15px_#0088ff]
+           transition transform hover:scale-105
+           hover:shadow-[0_0_35px_#00eaff]
+           overflow-hidden">
+
+    <span class="relative z-10">Projects</span>
+    <span class="relative z-10 text-lg sm:text-xl">&gt;</span>
+
+    <span class="absolute inset-0 rounded-xl
+                 bg-gradient-to-r from-transparent via-[#00eaff]/40 to-transparent
+                 animate-[glowmove_2s_linear_infinite]"></span>
+  </a>
+  </div>  
+</body>
+
+<!-- FOOTER -->
+  <footer class="text-center text-gray-400 mt-12 text-sm">
+    © 2025 Portfolio Web • Designed by Carissa
+  </footer>

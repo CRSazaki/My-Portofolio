@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Orbitron Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* Glow Text Animation */
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00eaff; }
+      to { text-shadow: 0 0 25px #00eaff; }
+    }
+    @keyframes glowPurple {
+         from { text-shadow: 0 0 10px #cc00ff; }
+            to{ text-shadow: 0 0 25px #cc00ff; }
+        }
+    @keyframes glowmove {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+  </style>
+</head>
+
+<body class="min-h-screen p-10 text-white" style="background:#0a0f24; font-family:'Orbitron',sans-serif;">
+
+  <!-- HEADER -->
+<header class="mb-12 flex items-center justify-between animate-[glow_3s_ease-in-out_infinite_alternate] bg-[#0d1b2a]/60 backdrop-blur-md border-b border-[#00eaff]/30 p-4 rounded-xl"">
+  
+  <!-- Title -->
+  <h1 class="text-4xl font-extrabold text-[#00eaff]">
+    My Portfolio
+  </h1>
+
+  <!-- Nav -->
+ <nav class="flex flex-col sm:flex-row gap-4 sm:gap-6 text-lg">
+  <a href="index.html" class="hover:text-[#00eaff] transition">Home</a>
+  <a href="about.html" class="hover:text-[#00eaff] transition">About</a>
+  <a href="projects.html" class="hover:text-[#00eaff] transition">Projects</a>
+  <a href="contact.html" class="hover:text-[#00eaff] transition">Contact</a>
+</nav>
+</header>
+
+    <!--Judul-->
+    <section class="flex flex-col items-center text-center mt-10">
+    <h1 class="text-4xl font-extrabold text-[#cc00ff] animate-[glowPurple_3s_ease-in-out_infinite_alternate]">Projects</h1>
+    <subtitle>Beikut adalah beberapa project yang pernah saya buat</subtitle>
+    </section>
+
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto mt-12">
+
+  <!-- 2D (scroll ke projects) -->
+  <a href="#duaD" class="p-6 bg-[#11173d] rounded-xl shadow-[0_0_15px_#0088ff] cursor-pointer transition transform hover:scale-105 hover:bg-[#0088ff] hover:shadow-[0_0_30px_#00eaff]">
+    <h3 class="text-xl font-bold mb-2">2D</h3>
+    <p class="text-gray-300 text-sm">Assets 2D yang pernah saya buat</p>
+  </a>
+
+  <!-- 3D -->
+  <a href="#tigaD" class="p-6 bg-[#11173d] rounded-xl shadow-[0_0_15px_#ff00ea] cursor-pointer transition transform hover:scale-105 hover:bg-[#ff00ea] hover:shadow-[0_0_30px_#ff4dff]">
+    <h3 class="text-xl font-bold mb-2">3D</h3>
+    <p class="text-gray-300 text-sm">Project 3D yang di buat di blender</p>
+  </a>
+
+  <!-- Coding -->
+  <a href="#coding" class="p-6 bg-[#11173d] rounded-xl shadow-[0_0_15px_#00ff88] cursor-pointer transition transform hover:scale-105 hover:bg-[#00ff88] hover:shadow-[0_0_30px_#00ffbb]">
+    <h3 class="text-xl font-bold mb-2">Coding</h3>
+    <p class="text-gray-300 text-sm">Hasil dari project coding</p>
+  </a>
+  
+  <!-- Game -->
+  <a href="#game" class="p-6 bg-[#11173d] rounded-xl shadow-[0_0_15px_#fb5b73] cursor-pointer transition transform hover:scale-105 hover:bg-[#fb5b73] hover:shadow-[0_0_30px_#fb5b73]">
+    <h3 class="text-xl font-bold mb-2">Game</h3>
+    <p class="text-gray-300 text-sm">Projek game yang pernah saya buat menggunakan Unity</p>
+  </a>
+</section>
+
+<!-- 2D -->
+<section id="duaD" class="mt-20 max-w-5xl mx-auto text-center">
+  <h2 class="text-3xl font-bold text-[#00eaff] mb-6">2D</h2>
+
+  <p class="text-gray-300 mb-4">Berikut beberapa project yang sudah saya kerjakan menggunakan Clip Studio Paint:</p>
+
+  <!-- isi projects -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="p-6 bg-[#11173d] rounded-xl shadow-[0_0_15px_#00eaff]">
+      <img src="img/water happy.png" class="w-full aspect-square object-contain"></img>
+      <h3 class="text-xl font-bold">Reinee</h3>
+      <p class="text-sm text-gray-300">Character dari element air.</p>
+    </div>
+
+    <div class="p-6 bg-[#11173d] rounded-xl shadow-[0_0_15px_#cc00ff]">
+      <img src="img/mini mons.png" class="w-full aspect-square object-contain"></img>
+      <h3 class="text-xl font-bold">Monster mini</h3>
+      <p class="text-sm text-gray-300">Minion monster cristal es.</p>
+    </div>
+
+    <div class="p-6 bg-[#11173d] rounded-xl shadow-[0_0_15px_#00ff88]">
+      <img src="img/monster.png" class="w-full aspect-square object-contain"></img>
+      <h3 class="text-xl font-bold">Monster Bos</h3>
+      <p class="text-sm text-gray-300">Bos monster cristal es.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3D -->
+<section id="tigaD" class="mt-20 max-w-5xl mx-auto text-center">
+  <h2 class="text-3xl font-bold text-[#ff00dd] mb-6">3D</h2>
+
+  <p class="text-gray-300 mb-4">Berikut beberapa project 3D yang sudah saya kerjakan menggunakan Blender:</p>
+
+  <!-- isi projects -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="p-6 bg-[#11173d] rounded-xl shadow-[0_0_15px_#00eaff]">
+      <img src="img/3dee/apartment.png" class="w-full aspect-square object-contain"></img>
+      <h3 class="text-xl font-bold">apartemen</h3>
+    </div>
+
+    <div class="p-6 bg-[#11173d] rounded-xl shadow-[0_0_15px_#cc00ff]">
+      <img src="img/3dee/hotel kuning.png" class="w-full aspect-square object-contain"></img>
+      <h3 class="text-xl font-bold">Hotel</h3>
+    </div>
+
+    <div class="p-6 bg-[#11173d] rounded-xl shadow-[0_0_15px_#00ff88]">
+      <img src="img/3dee/kelas1.png" class="w-full aspect-square object-contain"></img>
+      <h3 class="text-xl font-bold">kelas</h3>
+    </div>
+    <div class="p-6 bg-[#11173d] rounded-xl shadow-[0_0_15px_#ff00dd]">
+      <img src="img/3dee/rumah biru1.png" class="w-full aspect-square object-contain"></img>
+      <h3 class="text-xl font-bold">rumah</h3>
+    </div>
+  </div>
+
+  <!-- coding -->
+<section id="coding" class="mt-20 max-w-5xl mx-auto text-center">
+  <h2 class="text-3xl font-bold text-[#00ff88] mb-6">Coding</h2>
+
+  <p class="text-gray-300 mb-4">Berikut beberapa hasil coding yang sudah saya kerjakan:</p>
+
+  <!-- isi projects -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    <div class="p-6 bg-[#11173d] rounded-xl shadow-[0_0_15px_#00eaff]">
+      <img src="img/crocodic/tugas week4 (2).png" class="w-full aspect-square object-contain"></img>
+      <h3 class="text-xl font-bold">Project Flex-Box</h3>
+    </div>
+
+    <div class="p-6 bg-[#11173d] rounded-xl shadow-[0_0_15px_#cc00ff]">
+      <img src="img/crocodic/profile.png" class="w-full aspect-square object-contain"></img>
+      <h3 class="text-xl font-bold">profil</h3>
+    </div>
+
+    <div class="p-6 bg-[#11173d] rounded-xl shadow-[0_0_15px_#00ff88]">
+      <img src="img/crocodic/login.png" class="w-full aspect-square object-contain"></img>
+      <h3 class="text-xl font-bold">login</h3>
+    </div>
+
+    <div class="p-6 bg-[#11173d] rounded-xl shadow-[0_0_15px_#ff00dd]">
+      <img src="img/crocodic/crud.png" class="w-full aspect-square object-contain"></img>
+      <h3 class="text-xl font-bold">Sistem CRUD</h3>
+    </div>
+
+    <div class="p-6 bg-[#11173d] rounded-xl shadow-[0_0_15px_#ff0066]">
+        <video controls class="w-full aspect-square object-contain rounded-lg">
+            <source src="video/Tugas week8.mp4" type="video/mp4">
+            Browser kamu tidak mendukung video.
+        </video>
+        <h3 class="text-xl font-bold mt-3">Project JavaScript</h3>
+    </div>
+  </div>
+
+  <!-- Game -->
+<section id="game" class="mt-20 max-w-5xl mx-auto text-center">
+  <h2 class="text-3xl font-bold text-[#fb5b73] mb-6">Game</h2>
+
+  <p class="text-gray-300 mb-4">Berikut beberapa hasil projek game yang sudah saya kerjakan:</p>
+
+  <!-- isi projects -->
+  <div class="p-6 bg-[#11173d] rounded-xl shadow-[0_0_15px_#00eaff]">
+        <video controls class="w-full aspect-square object-contain rounded-lg">
+            <source src="video/game.mp4" type="video/mp4">
+        </video>
+        <h3 class="text-xl font-bold mt-3">video Gameplay
+        </h3>
+    </div>
+
+    <div class="mt-10">
+    <a href="contact.html"
+      class="relative inline-flex items-center gap-2 px-5 py-3 sm:px-6 sm:py-3 md:px-8 md:py-4 text-sm sm:text-base md:text-lg font-bold bg-[#11173d] rounded-xl
+           shadow-[0_0_12px_#0088ff] md:shadow-[0_0_15px_#0088ff]
+           transition transform hover:scale-105
+           hover:shadow-[0_0_35px_#00eaff]
+           overflow-hidden">
+
+    <span class="relative z-10">Contact</span>
+    <span class="relative z-10 text-lg sm:text-xl">&gt;</span>
+
+    <span class="absolute inset-0 rounded-xl
+                 bg-gradient-to-r from-transparent via-[#00eaff]/40 to-transparent
+                 animate-[glowmove_2s_linear_infinite]"></span>
+  </a>
+  </div>
+</section>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener("click", function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    
+    target.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+});
+});
+</script>
+
+  <!-- FOOTER -->
+  <footer class="text-center text-gray-400 mt-12 text-sm">
+    © 2025 Portfolio Web • Designed by Carissa
+  </footer>
+</body>
